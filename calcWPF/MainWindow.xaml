@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:calcWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="372" Width="494">
+    <Grid Background="#FFD68E8E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Name="text" Grid.Row="0" Grid.ColumnSpan="4" Foreground="#FF080808" Background="White" Padding="20,0,20,0" FontFamily="Segoe UI Black" FontSize="36"/>
+        <!--первая строка - элементы (, ), С и х-->
+        <Button Grid.Row="1" Grid.Column="0" FontFamily="Arial Black" FontSize="25">(</Button>
+        <Button Grid.Row="1" Grid.Column="1" FontFamily="Arial Black" FontSize="25">)</Button>
+        <Button Grid.Row="1" Grid.Column="2" FontFamily="Arial Black" FontSize="25">C</Button>
+        <Button Grid.Row="1" Grid.Column="3" FontFamily="Arial Black" FontSize="25" Foreground="#FF080808" Background="#FFFFAAAA">x
+        </Button>
+        <!--вторая строка - элементы 1,2,3 и +-->
+        <Button Grid.Row="2" Grid.Column="0" FontFamily="Arial Black" FontSize="25">1</Button>
+        <Button Grid.Row="2" Grid.Column="1" FontFamily="Arial Black" FontSize="25">2</Button>
+        <Button Grid.Row="2" Grid.Column="2" FontFamily="Arial Black" FontSize="25">3</Button>
+        <Button Grid.Row="2" Grid.Column="3" FontFamily="Arial Black" FontSize="25" Foreground="#FF080808" Background="#FFFFAAAA">+
+        </Button>
+        <!--третья строка - элементы 4,5,6 и +-->
+        <Button Grid.Row="3" Grid.Column="0" FontFamily="Arial Black" FontSize="25">4</Button>
+        <Button Grid.Row="3" Grid.Column="1" FontFamily="Arial Black" FontSize="25">5</Button>
+        <Button Grid.Row="3" Grid.Column="2" FontFamily="Arial Black" FontSize="25">6</Button>
+        <Button Grid.Row="3" Grid.Column="3" FontFamily="Arial Black" FontSize="25" Foreground="#FF080808" Background="#FFFFAAAA">-
+        </Button>
+        <!--четвертая строка - элементы 7,8,9 и *-->
+        <Button Grid.Row="4" Grid.Column="0" FontFamily="Arial Black" FontSize="25">7</Button>
+        <Button Grid.Row="4" Grid.Column="1" FontFamily="Arial Black" FontSize="25">8</Button>
+        <Button Grid.Row="4" Grid.Column="2" FontFamily="Arial Black" FontSize="25">9</Button>
+        <Button Grid.Row="4" Grid.Column="3" FontFamily="Arial Black" FontSize="25" Foreground="#FF080808" Background="#FFFFAAAA">*
+        </Button>
+        <!--пятая строка - элементы ., 0,= т /-->
+        <Button Grid.Row="5" Grid.Column="0" FontFamily="Arial Black" FontSize="25">.</Button>
+        <Button Grid.Row="5" Grid.Column="1" FontFamily="Arial Black" FontSize="25">0</Button>
+        <Button Grid.Row="5" Grid.Column="2" FontFamily="Arial Black" FontSize="25">=</Button>
+        <Button Grid.Row="5" Grid.Column="3" FontFamily="Arial Black" FontSize="25" Foreground="#FF080808" Background="#FFFFAAAA">/
+        </Button>
     </Grid>
 </Window>
